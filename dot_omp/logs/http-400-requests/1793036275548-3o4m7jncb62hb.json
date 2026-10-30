@@ -1,0 +1,33 @@
+{
+  "provider": "github-copilot",
+  "api": "anthropic-messages",
+  "model": "claude-haiku-5.5",
+  "method": "POST",
+  "url": "https://api.individual.githubcopilot.com/v1/messages",
+  "body": {
+    "model": "claude-haiku-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Compress into one routing hint of at most 12 words: WHEN to use; WHEN NOT only if it prevents confusion. Retain recognizable trigger words. Do not restate the skill name or market it. Output one line without bullets or quotes.\n\nSkill: developing-with-streamlit\nDescription: Use for ALL Streamlit tasks: creating, editing, debugging, beautifying, styling, theming, optimizing, or deploying Streamlit apps. Also custom components, st.components.v2, HTML/JS/CSS work. Discovers and loads version-matched reference docs from the user's installed Streamlit (>=1.57). Triggers: streamlit, st., dashboard, app.py, beautify, style, CSS, color, background, theme, button, widget styling, custom component, st.components, CCv2, session state, performance, cache, fragment, slow rerun, deploy.",
+            "cache_control": {
+              "type": "ephemeral"
+            }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 1024,
+    "thinking": {
+      "type": "disabled"
+    },
+    "stream": true
+  },
+  "errorResponse": {
+    "status": 400,
+    "message": "400 {\"error\":{\"message\":\"The requested model is not supported.\",\"code\":\"model_not_supported\",\"param\":\"model\",\"type\":\"invalid_request_error\"}}"
+  }
+}

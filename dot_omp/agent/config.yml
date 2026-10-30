@@ -1,0 +1,10 @@
+composer:
+  shape: box
+defaultThinkingLevel: auto
+modelRoles:
+  default: ollama-cloud/gemma4:31b
+  judge: openrouter/openrouter/free:auto
+setupVersion: 2
+symbolPreset: nerd
+theme:
+  dark: titanium

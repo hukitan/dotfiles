@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/can1357/oh-my-pi/main/packages/coding-agent/src/config/mcp-schema.json",
+  "mcpServers": {
+    "motherduck": {
+      "type": "http",
+      "url": "https://api.motherduck.com/mcp",
+      "auth": {
+        "type": "oauth",
+        "credentialId": "mcp_oauth:profile:default:https://api.motherduck.com/mcp",
+        "tokenUrl": "https://mcp-auth.motherduck.com/token",
+        "resource": "https://api.motherduck.com/mcp",
+        "clientId": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWRpcmVjdF91cmlzIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9jYWxsYmFjayJdLCJqdGkiOiJlN2E1YWRlNy01ODlmLTQ2ZmQtOTJkMS00YWJiNWRiNDNmYmEiLCJjbGllbnRfbmFtZSI6Im9oLW15LXBpIiwiaWF0IjoxNzkyNjE0MDQyfQ.m-qA1zVCNkudNxFCODqceMrRLf_80Oe5ka4beTAWM00"
+      }
+    }
+  }
+}
